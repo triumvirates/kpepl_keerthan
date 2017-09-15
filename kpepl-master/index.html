@@ -18,6 +18,7 @@
 <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 <!--Animation-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -47,12 +48,12 @@
 				<div class="dropdown-content">
 				  	<a href="about.html">Company Profile</a>
 				    <a href="#">Certificates</a>
-				    <a href="#">Gallery</a>
+				    <a href="gallery.html">Gallery</a>
 				    <a href="#">Customers</a>
 				 </div>
 			</li>
 			<li>
-			<a href="page-sample.html">Products</a>
+			<a href="product.html">Products</a>
 			</li>
 			<li>
 			<a href="contact.html">Contact</a>
@@ -69,7 +70,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2">
-				<h1 class="brand-heading animated bounce">KARNATAKA PLASCOM ENGINEERS PVT LTD.</h1>
+				<h1 class="brand-heading animated flip">KARNATAKA PLASCOM ENGINEERS PVT LTD.</h1>
 				<p class="intro-text animated slideInDown">
 					Injection Moulding
 				</p>
@@ -89,7 +90,7 @@
 		<div class="col-lg-8 col-lg-offset-2 about-us-border">
 			
 			<p class="about-us">
-			We at Karnataka Plascom Engineers Pvt. Ltd. are committed to exceed customer expectations of quality of product, service and business ethics <span class="read-more-target">
+			M/s Karnataka Plascom Engineers Pvt. Ltd., Bommasandra, pioneers in plastic injection moulding, supplying to various OEM’s for the last 4 decades <span class="read-more-target">
 				dfjnsad fsdgns fasd.gn fsdag.ngsdg gsdg. 
 				</span><a href="#" class="continue read-more">Read more...</a>
 			</p>
@@ -141,38 +142,46 @@
 			</div>
 		</div>
 </div>
+
 <!--Vision-Mision-->
-<div id="wrapper-principals">
-	<div class="text-center bg-color2">
-	  <div class="col-sm-4">
-	  	<div class="icon-style">
-	  		<i class="fa fa-eye" aria-hidden="true"></i>
-	  		<h3>Vision</h3>
-	  		<p>Be the first choice of our customers for plastic injection moulding solutions</p>
-	  	</div>
-	  </div>
-	  <div class="col-sm-4">
-	  	<div class="icon-style">
-	  		<i class="fa fa-rocket" aria-hidden="true"></i>
-	  		<h3>Mission</h3>
-	  		<p>Innovating efficient processes to achieve high standards of quality of product and services</p>
-	  	</div>
-	  </div>
-	  <div class="col-sm-4">
-	  	<div class="icon-style">
-	  		<i class="fa fa-users" aria-hidden="true"></i>
-	  		<h3>Core Values</h3>
-	  		<p>Excellence
-				Ethics
-				People
-				Now Now</p>
-	  	</div>
-	  </div>
-	</div>
+<div id="#" class="bg-color2">
+			
+			<div class="container">
+				<div class="row text-center">
+					<div class="col-md-4 col-sm-4">
+						<div class="services ">
+							<i  class="fa fa-eye icon-style2"></i>
+							<h3>Vision</h3>
+							<p>Be the first choice of our customers for plastic injection moulding solutions</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4">
+						<div class="services">
+							<i class="fa fa-rocket icon-style2"></i>
+							<h3>Mision</h3>
+							<p>Innovating efficient processes to achieve high standards of quality of product and services</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4">
+						<div class="services">	
+							<i class="fa fa-users icon-style2"></i>
+							<h3>Core Values</h3>
+							<p>xcellence
+								Ethics
+								People
+								Now</p>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
 </div>
 
 
-<div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=Karnataka%20Plascom%20Engineers%20Private%20Limited%2C%20Bengaluru%2C%20Karnataka%2C%20India&t=&z=14&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>google maps <a href="http://www.embedgooglemap.net">embedgooglemap.net</a></div><style>.mapouter{overflow:hidden;height:400px;width:100%;}.gmap_canvas {background:none!important;height:400px;width:100%;}</style></div>
+
+<div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="350" id="gmap_canvas" src="https://maps.google.com/maps?q=Karnataka%20Plascom%20Engineers%20Private%20Limited%2C%20Bengaluru%2C%20Karnataka%2C%20India&t=&z=14&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>google maps <a href="http://www.embedgooglemap.net">embedgooglemap.net</a></div><style>.mapouter{overflow:hidden;height:350px;width:100%;}.gmap_canvas {background:none!important;height:350px;width:100%;}</style></div>
+
 
 <!-- Footer -->
 <footer>
@@ -191,6 +200,10 @@
 <script src="js/jquery.easing.min.js"></script>
 <!-- Custom Theme JavaScript -->
 <script src="js/theme.js"></script>
+    <script src="assets/js/jquery.nicescroll.min.js"></script>
+    <!-- EASING SCROLL SCRIPTS   -->
+    <script src="assets/js/jquery.easing.min.js"></script>
+
 </body>
 </html>
 
@@ -198,6 +211,7 @@
 <script type="text/javascript">
 	$(function(){
 		$(".continue.read-more").click(function(e){
+			debugger
 			e.preventDefault();
 			$(".read-more-target").toggle();
 			if($(this).html() == "Read more...")
@@ -206,4 +220,6 @@
 				$(this).html('Read more...')
 		});
 	})
+
+
 </script>

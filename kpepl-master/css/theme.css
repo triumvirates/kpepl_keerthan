@@ -9,7 +9,7 @@ body {
 	font-family:Open Sans,"Helvetica Neue",Helvetica,Arial,sans-serif;
 	color:#fff;
 	background-color:#eee;
-	 font-weight:300;
+	 font-weight:100;
 }
 html {
 	width:100%;
@@ -27,8 +27,9 @@ footer{
 }
 p {
 	margin:0 0 25px;
-	font-size:18px;
+	font-size:16px;
 	line-height:1.5;
+	font-weight: 400;
 }
 @media(min-width:768px) {
 	p {
@@ -126,7 +127,19 @@ a:hover,a:focus {
 	padding:100px 0 100px 0;
 	text-align:center;
 	color:#fff;
-	background-image:radial-gradient(circle at 50% 50%,rgba(0,0,0,0.46),rgba(0,0,0,0.88)),url('http://unsplash.it/1600/1400?random=9');
+	background-image:radial-gradient(circle at 50% 50%,rgba(0,0,0,0.46),rgba(0,0,0,0.88)),url('../img/img1.jpg');
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+	-o-background-size:cover;
+}
+.intro-about {
+	display:table;
+	width:100%;
+	height:auto;
+	padding:100px 0 100px 0;
+	text-align:center;
+	color:#fff;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
 	background-size:cover;
@@ -153,15 +166,15 @@ a:hover,a:focus {
 		padding:0;
 	}
 	.intro .intro-body .brand-heading {
-		font-size:165%;
+		font-size:175%;
 		margin-top:160px;
 		margin-bottom:20px;
 		border-top:1px solid #fff;
 		border-bottom:1px solid #fff;
-		font-weight: 500;
+		font-weight: 600;
 		display:inline-block;
 		padding:15px 0;
-		letter-spacing: 0.12em;
+		letter-spacing: 0.125em;
 	}
 	.intro .intro-body .intro-text {
 		font-size:20px;

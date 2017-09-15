@@ -1,0 +1,164 @@
+div.pp_default .pp_top,div.pp_default .pp_top .pp_middle,div.pp_default .pp_top .pp_left,div.pp_default .pp_top .pp_right,div.pp_default .pp_bottom,div.pp_default .pp_bottom .pp_left,div.pp_default .pp_bottom .pp_middle,div.pp_default .pp_bottom .pp_right{height:13px}
+div.pp_default .pp_top .pp_left{background:url(../img/prettyPhoto/default/sprite.png) -78px -93px no-repeat}
+div.pp_default .pp_top .pp_middle{background:url(../img/prettyPhoto/default/sprite_x.png) top left repeat-x}
+div.pp_default .pp_top .pp_right{background:url(../img/prettyPhoto/default/sprite.png) -112px -93px no-repeat}
+div.pp_default .pp_content .ppt{color:#f8f8f8}
+div.pp_default .pp_content_container .pp_left{background:url(../img/prettyPhoto/default/sprite_y.png) -7px 0 repeat-y;padding-left:13px}
+div.pp_default .pp_content_container .pp_right{background:url(../img/prettyPhoto/default/sprite_y.png) top right repeat-y;padding-right:13px}
+div.pp_default .pp_expand{background:url(../img/prettyPhoto/default/sprite.png) 0 -29px no-repeat;cursor:pointer;width:28px;height:28px}
+div.pp_default .pp_expand:hover{background:url(../img/prettyPhoto/default/sprite.png) 0 -56px no-repeat;cursor:pointer}
+div.pp_default .pp_contract{background:url(../img/prettyPhoto/default/sprite.png) 0 -84px no-repeat;cursor:pointer;width:28px;height:28px}
+div.pp_default .pp_contract:hover{background:url(../img/prettyPhoto/default/sprite.png) 0 -113px no-repeat;cursor:pointer}
+div.pp_default .pp_close{width:30px;height:30px;background:url(../img/prettyPhoto/default/sprite.png) 2px 1px no-repeat;cursor:pointer}
+div.pp_default .pp_content_container .pp_details{margin-top:5px}
+div.pp_default .pp_bottom .pp_left{background:url(../img/prettyPhoto/default/sprite.png) -78px -127px no-repeat}
+div.pp_default .pp_bottom .pp_middle{background:url(../img/prettyPhoto/default/sprite_x.png) bottom left repeat-x}
+div.pp_default .pp_bottom .pp_right{background:url(../img/prettyPhoto/default/sprite.png) -112px -127px no-repeat}
+div.pp_default .pp_loaderIcon{background:url(../img/prettyPhoto/default/loader.gif) center center no-repeat}
+div.pp_pic_holder a:focus{outline:none}
+div.pp_overlay{background:#000;display:none;left:0;position:absolute;top:0;width:100%;z-index:9500}
+div.pp_pic_holder{display:none;position:absolute;width:100px;z-index:10000}
+.pp_content{height:40px;min-width:40px}
+
+
+* html .pp_content{width:40px}
+.pp_content_container{position:relative;text-align:left;width:100%}
+.pp_content_container .pp_left{padding-left:20px}
+.pp_content_container .pp_right{padding-right:20px}
+.pp_content_container .pp_details{float:left;margin:10px 0 2px}
+.pp_hoverContainer{position:absolute;top:0;width:100%;z-index:2000}
+a.pp_expand,a.pp_contract{cursor:pointer;display:none;height:20px;position:absolute;right:30px;text-indent:-10000px;top:10px;width:20px;z-index:20000}
+a.pp_close{position:absolute;right:0;top:0;display:block;line-height:22px;text-indent:-10000px}
+.pp_loaderIcon{display:block;height:24px;left:50%;position:absolute;top:50%;width:24px;margin:-12px 0 0 -12px}
+#pp_full_res{line-height:1!important}
+div.ppt{color:#fff;display:none;font-size:17px;z-index:9999;margin:0 0 5px 15px}
+div.pp_default .pp_content,div.light_rounded .pp_content{background-color:#fff}
+div.pp_default .pp_details{position:relative}
+.pp_top,.pp_bottom{height:20px;position:relative}
+* html .pp_top,* html .pp_bottom{padding:0 20px}
+.pp_top .pp_left,.pp_bottom .pp_left{height:20px;left:0;position:absolute;width:20px}
+.pp_top .pp_middle,.pp_bottom .pp_middle{height:20px;left:20px;position:absolute;right:20px}
+* html .pp_top .pp_middle,* html .pp_bottom .pp_middle{left:0;position:static}
+.pp_top .pp_right,.pp_bottom .pp_right{height:20px;left:auto;position:absolute;right:0;top:0;width:20px}
+.pp_fade{display:none}
+
+
+
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.pad-top {
+    padding-top: 100px;
+}
+
+.head-glow {
+    background-color: rgba(66, 139, 202, 0.8);
+    color: #fff;
+    padding: 0px 5px 0px 20px;
+    margin: 0px 15px 0px 8px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.sub-hr {
+    border: 1px solid rgba(184, 94, 255, 1);
+    width: 10%!important;
+}
+
+.min-set {
+    min-height: 100px;
+}
+
+.img-set {
+    height: 100px;
+    margin-top: 10px;
+}
+
+/*==========================================
+   GALLERY STYLES
+    =====================================================*/
+
+#port-folio {
+    padding-top: 10px;
+    min-height: 550px;
+}
+
+.portfolio-item {
+    border: 2px solid #e4e4e4;
+    margin: 25px 5px;
+    display: inline-block;
+}
+
+
+
+    .portfolio-item img:hover {
+        cursor: pointer;
+        -webkit-transform: scale(1.5, 1.5);
+        -ms-transform: scale(1.5, 1.5);
+        transform: scale(1.5, 1.5);
+        transition-duration: 0.3s;
+        -webkit-transition-duration: 0.3s; /* Safari */
+        z-index: 1;
+    }
+
+/*==========================================
+   GALLERY/ PORTFOLIO FILTER STYLES
+    =====================================================*/
+ul#filters {
+    padding: 0px;
+}
+
+#filters {
+    margin: 3% 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+    #filters li {
+        display: -webkit-inline-box;
+    }
+
+        #filters li span {
+            display: block;
+            padding: 5px 4px;
+            text-decoration: none;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 800;
+        }
+
+#port-folio .portfolio-item {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    width: 100%;
+    float: left;
+    overflow: hidden;
+    display: none;
+}
+
+
+.parallax-half{
+     background-image:(circle at 50% 50%,rgba(0,0,0,0.30),rgba(0,0,0,0.88)),url(../img/img1.jpg');
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+     background-attachment: fixed;
+     width: 100%;
+     height: 50vh;
+}
