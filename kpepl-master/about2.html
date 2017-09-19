@@ -45,9 +45,9 @@
 			<a href="index.html">Home</a>
 			</li>
 			<li class="dropdown">
-				<a href="about.html">About Us</a>
+				<a href="about2.html">About Us</a>
 				<div class="dropdown-content">
-				  	<a href="about.html">Company Profile</a>
+				  	<a href="about2.html">Company Profile</a>
 				    <a href="#">Certificates</a>
 				    <a href="#">Gallery</a>
 				    <a href="#">Customers</a>
@@ -128,7 +128,7 @@
     <div class="col-md-4">
       <div class="block-links-hover">
         <a href="#">
-        <i class="fa fa-file-image-o  icon-about" aria-hidden="true"></i>
+        <i class="fa fa-folder-open-o  icon-about" aria-hidden="true"></i>
         <h4>Certificates</h4>
         <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
         </a>
@@ -137,7 +137,7 @@
      <div class="col-md-4">
       <div class="block-links-hover">
         <a href="#">
-        <h4>Facilities</h4>
+        <h4>Capabilities</h4>
         <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
         </a>
       </div>
@@ -238,7 +238,7 @@
 
     <h3>Gallery</h3>
 
-    <p class="page-description text-center">Thumbnails With Title And Description</p>
+    <p class="page-description text-center">Insight of our Company</p>
     
     <div class="tz-gallery">
 
@@ -314,7 +314,56 @@
 
     </div>
 
-</div> div>
+</div> 
+
+
+<!--Capabilities Section-->
+
+<div id="capabilities-sec">
+	<div class="container">
+	
+			<p class="center">
+				<li>Printing Arrangements</li>
+				<li>Painting Arrangements</li>
+				<li>Plating Arrangements</li>
+				<li>Hot Sealing Arrangements</li>
+				<li>Assembly Lines as per Customer Needs</li>
+				<li>In Mould Decorations</li>
+				<li>Ultra Sonic Welding</li>
+				<li>Multiple Insert Molding</li>
+
+				<span class="read-more-target">Why do we use it?
+				It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). </span><p><a href="#" class="continue read-more">Read more...</a>
+			</p>
+	</div>
+</div>
+
+<!--____________________Our Customers Section__________________________-->
+<div id="customers-sec">
+	<div class="container">
+		<h3>Our Customers</h3>
+		<div class="col-md-1">
+			<a href="#"><h2><</h2></a>
+		</div>
+		<div class="col-md-10">
+			<div class="col-md-4">
+				<img src="img/img2.jpg">
+			</div>
+			<div class="col-md-4">
+				<img src="img/bg-4.jpg">
+			</div>
+			<div class="col-md-4">
+				<img src="img/bg-5.jpg">
+			</div>
+	
+			
+		</div>
+		<div class="col-md-1">
+			<a href="#"><h2>></h2></a>
+		</div>
+	</div>
+</div>
+
 
 
 
@@ -350,6 +399,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+
+
 
 /*Branding
 ___________________________________________________*/
@@ -415,7 +467,7 @@ ________________________________________________*/
   margin: 1.3em 0;
 }
 .block-links-hover p{
- text-align: justify;
+ text-align: left;
  font-size: 14px;
 
 }
@@ -427,7 +479,7 @@ ________________________________________________*/
 
 } 
 .block-links-hover:hover{
-  background-color: #da4d3c;
+  background-color: #da6254;
   color: white;
   transform: translateY(-10px);
   transition: all 0.3;
@@ -440,13 +492,37 @@ ________________________________________________*/
 .block-links-hover:hover i{
   color: white;
 }
+
+
+
+
+.block-links-hover:hover {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s; 
+    /* When the animation is finished, start again */
+    animation-iteration-count: 20s; 
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
 /*Icon Style
 ___________________________________________________*/
 .icon-about{
-    color: #da4d3c;
+    color: #da6254;
     font-size: 300%;
     padding-bottom: 25px;
-    border-bottom: 2px solid #da4d3c;
+    border-bottom: 2px solid #da6254;
 }
 
 
@@ -586,6 +662,7 @@ time {
 .timeline{
 	color: white;
 	font-weight: normal;
+	padding-bottom: 10%;
 }
 
 .timeline ul li::after {
@@ -619,6 +696,12 @@ time {
 
 /* Gallery
 _________________________________________________*/
+
+.gallery-container{
+	margin-top: 5%;
+    padding-top: 5%;
+    background-color: #fff;
+}
 
 
 .gallery-container h1 {
@@ -758,7 +841,7 @@ _________________________________________________*/
 /* Content Revealing*/
 	$(function(){
 		$(".continue.read-more").click(function(e){
-			debugger
+			
 			e.preventDefault();
 			$(".read-more-target").toggle();
 			if($(this).html() == "Read more...")
