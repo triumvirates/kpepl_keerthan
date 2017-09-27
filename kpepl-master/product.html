@@ -1,146 +1,558 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <!--[if IE]>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <![endif]-->
-    <title>Our Products</title>
-    <!-- BOOTSTRAP CORE STYLE  -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet" />
-   
-    <!-- PRETTYPHOTO STYLE  -->
-    <link href="assets/css/prettyPhoto.css" rel="stylesheet" />
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>About Us</title>
+<!-- Bootstrap Core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- Custom CSS -->
+<link href="css/theme.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<!-- Custom Fonts -->
+<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,400italic,700italic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
     
-    <!-- CUSTOM THEME COLOR -- YOU CAN USE LIGHT & DARK THEMES  -->
-    
-    <!-- GOOGLE FONT -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+
 </head>
-<body>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<!-- Navigation -->
+<nav class="navbar navbar-custom navbar-fixed-top" role="navigation nav-bg">
+<div class="container">
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+		<i class="fa fa-bars"></i>
+		</button>
+		<a class="navbar-brand page-scroll" href="index.html">
+		KPLASCOM</a>
+	</div>
+	<!-- Collect the nav links, forms, and other content for toggling -->
+	<div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+		<ul class="nav navbar-nav">
+			<li>
+			<a href="index.html">Home</a>
+			</li>
+			<li class="dropdown">
+				<a href="about.html">About Us</a>
+				<div class="dropdown-content">
+				  	<a href="about.html">Company Profile</a>
+				    <a href="#">Certificates</a>
+				    <a href="#">Gallery</a>
+				    <a href="#">Customers</a>
+				    <a href="#">Capabilities</a>
+                    <a href="#">Philosophy</a>
+				 </div>
+			</li>
+			<li>
+			<a href="product.html">Products</a>
+			</li>
+			<li>
+			<a href="contact.html">Contact</a>
+			</li>
+		</ul>
+	</div>
+	<!-- /.navbar-collapse -->
+</div>
+<!-- /.container -->
+</nav>
+<!-- Intro Header -->
+<header class="intro-about about-bg">
+  <div class="text-center branding">
+  	<h2>A Nice Branding</h2>
+  	<p> Pioneers in plastic injection moulding, supplying to various OEM’s for the last 4 decades</p>
+  </div>
+</header>
 
-    
-    <section id="gallery-sec">
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Automobiles</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">Computers</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Batteries</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Sign Plates</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Furnitures</button>
 
-        <div class="container ">
-            <div class="row text-center min-set">
-                <div class="col-md-12">
-                    <h2><mark class="head-glow">PRODUCTS</mark>Gallery </h2>
-                    <hr class="sub-hr" />
+</div>
+
+<div id="London" class="tabcontent">
+  <div class="tz-gallery">
+
+        <div class="row">
+
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="img/auto1.jpg">
+                        <img src="img/auto1.jpg" alt="Park">
+                    </a>
+                    <div class="caption">
+                        <h3>Part Name</h3>
+                        <p>Some Description if needed</p>
+                    </div>
                 </div>
             </div>
-            <div id="port-folio">
-                <div class="row ">
-                    <ul id="filters">
-                        <li><span class="filter active" data-filter="AUTOMOBILES COMPUTERS OTHERS">All </span></li>
-                        <li><span class="filter">/</span></li>
-                        <li><span class="filter" data-filter="AUTOMOBILES">AUTOMOBILES</span></li>
-                        <li><span class="filter">/</span></li>
-                        <li><span class="filter" data-filter="COMPUTERS">COMPUTERS</span></li>
-                        <li><span class="filter">/</span></li>
-                        <li><span class="filter" data-filter="OTHERS">OTHERS</span></li>
-                    </ul>
-                    <div class="col-md-4 col-sm-4">
-
-                        <div class="portfolio-item COMPUTERS mix_all" data-cat="COMPUTERS">
-
-
-                            <a class="preview" href="img/comp1.jpg">
-
-                                <img src="img/comp1.jpg" class="img-responsive " alt="" />
-                            </a>
-
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4">
-
-                        <div class="portfolio-item AUTOMOBILES mix_all" data-cat="AUTOMOBILES">
-
-
-                            <a class="preview" href="img/auto1.jpg">
-
-                                <img src="img/auto1.jpg" class="img-responsive " alt="" width="750px" height="500px" />
-                            </a>
-
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4">
-
-                        <div class="portfolio-item OTHERS mix_all" data-cat="OTHERS">
-
-
-                            <a class="preview" href="img/others1.jpg">
-
-                                <img src="img/others1.jpg" class="img-responsive " alt="" />
-                            </a>
-
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4">
-
-                        <div class="portfolio-item COMPUTERS mix_all" data-cat="COMPUTERS">
-
-                            <a class="preview" href="img/comp1.jpg">
-
-                                <img src="img/comp1.jpg" class="img-responsive " alt="" />
-                            </a>
-
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4">
-
-                        <div class="portfolio-item AUTOMOBILES mix_all" data-cat="AUTOMOBILES">
-
-
-                            <a class="preview" href="img/auto2.jpg">
-
-                                <img src="img/auto2.jpg" class="img-responsive " alt="" />
-                            </a>
-
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4">
-
-                        <div class="portfolio-item AUTOMOBILES mix_all" data-cat="AUTOMOBILES">
-
-                            <a class="preview" href="img/auto2.jpg">
-
-                                <img src="img/auto2.jpg" class="img-responsive " alt="" />
-                            </a>
-                        </div>
-
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="img/auto2.jpg">
+                        <img src="img/auto2.jpg" alt="Bridge">
+                    </a>
+                    <div class="caption">
+                        <h3>Part Name</h3>
+                        <p>Some Description if needed</p>
                     </div>
                 </div>
-
-
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="img/auto6.jpg">
+                        <img src="img/auto6.jpg" alt="Tunnel">
+                    </a>
+                    <div class="caption">
+                      <h3>Part Name</h3>
+                        <p>Some Description if needed</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="img/auto3.jpg">
+                        <img src="img/auto3.jpg" alt="Coast">
+                    </a>
+                    <div class="caption">
+                       <h3>Part Name</h3>
+                        <p>Some Description if needed</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="img/auto4.jpg">
+                        <img src="img/auto4.jpg" alt="Rails">
+                    </a>
+                    <div class="caption">
+                        <h3>Part Name</h3>
+                        <p>Some Description if needed</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="img/auto5.jpg">
+                        <img src="img/auto5.jpg" alt="Traffic">
+                    </a>
+                    <div class="caption">
+                       <h3>Part Name</h3>
+                        <p>Some Description if needed</p>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
-    <!-- END GALLERY  SECTION -->
 
-    
+    </div>
+</div>
 
- 
+<div id="Paris" class="tabcontent">
+  <div class="tz-gallery">
 
-    <!-- END LOCATION  SECTION -->
-    
-    <!-- CORE JQUERY  -->
-    <script src="assets/js/jquery-1.11.1.js"></script>
-    <!-- BOOTSTRAP SCRIPTS  -->
-    <script src="assets/js/bootstrap.js"></script>
-    <!-- PRETTYPHOTO SCRIPTS -->
-    <script src="assets/js/jquery.prettyPhoto.js"></script>
-    <!-- PORTFOLIO FILTER PLUGIN  -->
-    <script src="assets/js/jquery.mixitup.min.js"></script>
-    <!-- NICE SCROLL SCRIPTS   -->
-    <script src="assets/js/jquery.nicescroll.min.js"></script>
-    <!-- EASING SCROLL SCRIPTS   -->
-    <script src="assets/js/jquery.easing.min.js"></script>
-    <!-- CUSTOM SCRIPTS  -->
-    <script src="assets/js/custom.js"></script>
+        <div class="row">
 
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="img/auto1.jpg">
+                        <img src="img/auto1.jpg" alt="Park">
+                    </a>
+                    <div class="caption">
+                        <h3>Part Name</h3>
+                        <p>Some Description if needed</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="img/auto2.jpg">
+                        <img src="img/auto2.jpg" alt="Bridge">
+                    </a>
+                    <div class="caption">
+                        <h3>Part Name</h3>
+                        <p>Some Description if needed</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="img/auto6.jpg">
+                        <img src="img/auto6.jpg" alt="Tunnel">
+                    </a>
+                    <div class="caption">
+                      <h3>Part Name</h3>
+                        <p>Some Description if needed</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="img/auto3.jpg">
+                        <img src="img/auto3.jpg" alt="Coast">
+                    </a>
+                    <div class="caption">
+                       <h3>Part Name</h3>
+                        <p>Some Description if needed</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="img/auto4.jpg">
+                        <img src="img/auto4.jpg" alt="Rails">
+                    </a>
+                    <div class="caption">
+                        <h3>Part Name</h3>
+                        <p>Some Description if needed</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="img/auto5.jpg">
+                        <img src="img/auto5.jpg" alt="Traffic">
+                    </a>
+                    <div class="caption">
+                       <h3>Part Name</h3>
+                        <p>Some Description if needed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div> 
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  <div class="tz-gallery">
+
+        <div class="row">
+
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="img/auto1.jpg">
+                        <img src="img/auto1.jpg" alt="Park">
+                    </a>
+                    <div class="caption">
+                        <h3>Part Name</h3>
+                        <p>Some Description if needed</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="img/auto2.jpg">
+                        <img src="img/auto2.jpg" alt="Bridge">
+                    </a>
+                    <div class="caption">
+                        <h3>Part Name</h3>
+                        <p>Some Description if needed</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="img/auto6.jpg">
+                        <img src="img/auto6.jpg" alt="Tunnel">
+                    </a>
+                    <div class="caption">
+                      <h3>Part Name</h3>
+                        <p>Some Description if needed</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="img/auto3.jpg">
+                        <img src="img/auto3.jpg" alt="Coast">
+                    </a>
+                    <div class="caption">
+                       <h3>Part Name</h3>
+                        <p>Some Description if needed</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="img/auto4.jpg">
+                        <img src="img/auto4.jpg" alt="Rails">
+                    </a>
+                    <div class="caption">
+                        <h3>Part Name</h3>
+                        <p>Some Description if needed</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="img/auto5.jpg">
+                        <img src="img/auto5.jpg" alt="Traffic">
+                    </a>
+                    <div class="caption">
+                       <h3>Part Name</h3>
+                        <p>Some Description if needed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+
+<!-- Footer -->
+<footer>
+<div class="container text-center">
+	<p class="credits">
+		Copyright &copy; Karnataka Plascom Engineers Pvt Ltd. 2017. All Rights Reserved<br/>
+		
+	</p>
+</div>
+</footer>
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Plugin JavaScript -->
+<script src="js/jquery.easing.min.js"></script>
+<!-- Custom Theme JavaScript -->
+<script src="js/theme.js"></script>
 </body>
 </html>
+<style type="text/css">
+
+	body{
+	color: black!important;
+	
+}
+  *,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+
+/*Branding
+___________________________________________________*/
+
+
+
+.about-bg{
+	background-image:radial-gradient(circle at 50% 50%,rgba(0,0,0,0),rgba(0,0,0,0.8)),url('img/auto9.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	min-width: 100%;
+	height: 70%;
+  position: relative;
+
+}
+
+.branding{
+  position: absolute;
+	top: 60%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+}
+
+.navbar{
+	background-color: white!important;
+
+}
+
+
+
+
+.right-content{
+ background-color: white;
+ width: 80%;
+ float: right;
+
+
+}
+
+
+
+/* Style the tab */
+div.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.tabcontent {
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+
+/* Gallery
+_________________________________________________*/
+
+.gallery-container{
+	margin-top: 5%;
+    padding-top: 5%;
+    background-color: #fff;
+}
+
+
+.gallery-container h1 {
+    text-align: center;
+    margin-top: 70px;
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: bold;
+    color: #58595a;
+}
+
+.gallery-container p.page-description {
+    text-align: center;
+    margin: 30px auto;
+    font-size: 18px;
+    color: #85878c;
+}
+
+.tz-gallery {
+    padding: 40px;
+}
+
+.tz-gallery .thumbnail {
+    padding: 0;
+    margin-bottom: 30px;
+    background-color: #fff;
+    border-radius: 4px;
+    border: none;
+    transition: 0.15s ease-in-out;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
+}
+
+.tz-gallery .thumbnail:hover {
+    transform: translateY(-10px) scale(1.02);
+}
+
+.tz-gallery .lightbox img {
+    border-radius: 4px 4px 0 0;
+}
+
+.tz-gallery .caption{
+    padding: 26px 30px;
+    text-align: center;
+}
+
+.tz-gallery .caption h3 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.tz-gallery .caption p {
+    font-size: 12px;
+    color: #7b7d7d;
+    margin: 0;
+}
+
+.baguetteBox-button {
+    background-color: transparent !important;
+}
+
+
+
+
+
+/* GENERAL MEDIA QUERIES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+
+
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+<script type="text/javascript">
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+function openCity(evt, cityName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+/* Gallery Plugin */
+baguetteBox.run('.tz-gallery');
+
+
+</script>

@@ -1,4 +1,4 @@
-
+/*  Founder pic styling */
 .read-more-target{
 	display: none;
 }
@@ -10,7 +10,11 @@
 .continue{
 	font-size: initial;
     color: green;
+    border: 2px solid grey;
+    padding: 0.5%;
 }
+
+
 .border{
     margin-top: 70px;
     height: 180px;
@@ -34,6 +38,9 @@
     background: #f3f3f3;
     margin-top: 2em;
 }
+
+
+
 @media(min-width:768px) {
 		/* Dropdown Button */
 .dropbtn {
@@ -239,35 +246,7 @@ ul {
 .font-x1 {
     font-size: 1.2rem;
 }
-/*.icon-style i{
-  font-size: 400%;
-  border: 0.5px solid grey;
-  border-radius: 50%;
-  background: #f1f1f1;
-  padding: 9%;
-  background-clip: padding-box;
-  color: grey;
-  transition: all .3s ease-in-out;
 
-}
-.icon-style{
-  padding: 12% 0 5% 0;
-}
-.icon-style h3{
-  padding-top: 8%;
-  color: #6c7582;
-}
-.icon-style p{
-  padding: 0 3% ;
-  color: #544f4f;
-  font-weight: 400;
-}
-
-.icon-style i:hover{
-  border-color: inherit;
-    color: #FFFFFF;
-    background-color: #6c7582;
-}*/
 .bg-color2{
   background-color: #586d82;
 }
